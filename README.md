@@ -1,6 +1,6 @@
 # Privacy Policy for Library Robot Application
 
-This repository contains the privacy policy and documentation for a library-use application that integrates with Google Drive.
+This repository contains the privacy policy and documentation for a jitterbug-takephoto.
 
 ## 📚 About the App
 
