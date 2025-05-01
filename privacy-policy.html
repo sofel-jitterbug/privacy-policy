@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy - Library Robot Application</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
       max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 2em auto;
+      padding: 1em;
       background-color: #f9f9f9;
       color: #333;
     }
-    h1 {
+    h1, h2 {
       color: #2c3e50;
     }
-    h2 {
-      color: #34495e;
-      margin-top: 1.5em;
-    }
-    p {
-      margin: 0.8em 0;
+    a {
+      color: #0066cc;
     }
   </style>
 </head>
 <body>
   <h1>Privacy Policy</h1>
 
-  <p>This privacy policy explains how this application ("the App") handles your Google account and Google Drive data.</p>
+  <p>This privacy policy explains how the Library Robot Application handles data and uses Google Drive services.</p>
 
-  <h2>1. Information We Collect</h2>
-  <p>The App collects the following data:</p>
-  <ul>
-    <li>Google account authentication information (OAuth token)</li>
-    <li>File metadata and contents that you choose to upload to or download from Google Drive via the App</li>
-  </ul>
-
-  <h2>2. How We Use the Information</h2>
-  <p>We use the collected information solely for the following purposes:</p>
-  <ul>
-    <li>To allow you to upload to and download from your Google Drive</li>
-    <li>To authenticate and authorize your access to Google Drive services</li>
-  </ul>
-
-  <h2>3. Data Storage and Sharing</h2>
+  <h2>About the App</h2>
   <p>
-    The App does <strong>not</strong> store your Google Drive data on any external servers.<br>
-    OAuth tokens and any user data are <strong>not</strong> shared with third parties.
+    This application is used in libraries to support visitors through basic conversations and photo-taking using a robot.
+    Each library is assigned a dedicated Google account managed by the library itself.
+  </p>
+  <p>
+    When a library visitor agrees to take a photo, the robot captures the image and uploads it to the library's Google Drive using the <code>drive.file</code> scope.
+    A QR code is then generated containing a download link to the image file.
+  </p>
+  <p>
+    The visitor can scan the QR code using their smartphone or personal device to download their photo.
+    After the download is complete, the uploaded photo is promptly deleted from Google Drive.
   </p>
 
-  <h2>4. Security</h2>
-  <p>We implement reasonable security measures to protect user data from unauthorized access, alteration, or disclosure.</p>
+  <h2>Data Access and Usage</h2>
+  <ul>
+    <li>The app accesses only the files it uploads itself.</li>
+    <li>It does not access other contents of the Google Drive.</li>
+    <li>No personal data is stored on external servers.</li>
+    <li>No data is shared with third parties.</li>
+  </ul>
 
-  <h2>5. Contact</h2>
-  <p>If you have any questions or concerns, please contact us at:</p>
-  <p><strong>Contact Email:</strong> sofel.jitterbug@gmail.com</p>
+  <h2>Google Permissions</h2>
+  <p>
+    The app uses the following Google OAuth scope:
+  </p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/drive.file</code>: Used to upload and delete the visitor’s photo.</li>
+  </ul>
 
-  <p><em>This privacy policy is subject to change without prior notice.</em></p>
-  <p><strong>Last updated:</strong> May 1, 2025</p>
+  <h2>Intended Use</h2>
+  <p>
+    This app is intended for use in physical library environments only. It is not distributed publicly and is not intended for personal or commercial use outside the library system.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    If you have any questions about this policy, please contact: <a href="mailto:your_email@example.com">sofel.jitterbug@gmail.com</a>
+  </p>
 </body>
 </html>
